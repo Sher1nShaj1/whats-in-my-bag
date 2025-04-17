@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>What's in my bag?</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="background"></div>
+
+  <main>
+    <button class="arrow left">‹</button>
+
+    <div class="carousel-wrapper">
+      <!-- BAG 1 -->
+      <div class="bag-container active" data-index="0">
+        <img src="images/bag.png" alt="Marge Sherwood Shoulder Bag" id="bag" />
+        <div class="items" id="items-1">
+          <div class="item" style="--x: -190px; --y: -170px; --angle: -15deg;">
+            <a href="https://www.sephora.com/product/dior-addict-lip-glow-balm-P514572" target="_blank" data-tooltip="Lip Balm">
+              <img src="images/lipstick.png" alt="Lipstick"/>
+            </a>
+          </div>
+
+          <div class="item" style="--x: 150px; --y: -260px; --angle: 12deg;">
+            <a href="https://www.sephora.com/product/english-pear-freesia-cologne-P417180" target="_blank" data-tooltip="Perfume">
+              <img src="images/perfume.png" alt="Sunglasses" />
+            </a>
+          </div>
+
+          <div class="item" style="--x: -340px; --y: 180px; --angle: -8deg;">
+            <a href="https://shopgoldenrule.com/products/floral-claw-clips" target="_blank" data-tooltip="Claw Clip">
+              <img src="images/clip.png" alt="Wallet" />
+            </a>
+          </div>
+
+          <div class="item" style="--x: 310px; --y: 150px; --angle: 18deg;">
+            <a href="https://example.com/perfume" target="_blank" data-tooltip="Sunglasses">
+              <img src="images/glasses.png" alt="Perfume" />
+            </a>
+          </div>
+
+          <div class="item" style="--x: -160px; --y: 80px; --angle: -5deg;">
+            <a href="https://www.urbanoutfitters.com/shop/hybrid/baggu-baby-baggu-reusable-tote-bag" target="_blank" data-tooltip="Baggu">
+              <img src="images/baggu.png" alt="Keys" />
+            </a>
+          </div>
+
+          <div class="item" style="--x: 200px; --y: -50px; --angle: 10deg;">
+            <a href="https://www.amazon.com/Apple-EarPods-Headphones-Lightning-Connector/dp/B0D7FVQ1ZB" target="_blank" data-tooltip="Earphones">
+              <img src="images/ear.png" alt="Compact Mirror" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- BAG 2 -->
+      <div class="bag-container" data-index="1">
+        <img src="images/osoi.png" alt="Bag 2" class="bag" />
+        <div class="items" id="items-2">
+          <!-- Add items for Bag 2 here -->
+        </div>
+      </div>
+
+      <!-- BAG 3 -->
+      <div class="bag-container" data-index="2">
+        <img src="images/coach.png" alt="Bag 3" class="bag" />
+        <div class="items" id="items-3">
+          <!-- Add items for Bag 3 here -->
+        </div>
+      </div>
+    </div>
+
+    <button class="arrow right">›</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
