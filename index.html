@@ -8,79 +8,85 @@
 </head>
 <body>
   <div class="background"></div>
-
+  <div class="intro-screen">
+    <div class="intro-overlay">
+      <h1 class="intro-title">What's in My Bag?</h1>
+    </div>
+  </div>
   <main>
     <button class="arrow left">‹</button>
 
     <div class="carousel-wrapper">
-      <!-- BAG 1 -->
+      
+      <!-- BAG 1-->
       <div class="bag-container active" data-index="0">
         <img src="images/bag.png" alt="Marge Sherwood Shoulder Bag" id="bag" />
         <div class="items" id="items-1">
           <div class="item" style="--x: -190px; --y: -170px; --angle: -15deg;">
-            <a href="https://www.sephora.com/product/dior-addict-lip-glow-balm-P514572" target="_blank" data-tooltip="Lip Balm">
-              <img src="images/lipstick.png" alt="Lipstick"/>
-            </a>
-          </div>
-
-          <div class="item" style="--x: 150px; --y: -260px; --angle: 12deg;">
-            <a href="https://www.sephora.com/product/english-pear-freesia-cologne-P417180" target="_blank" data-tooltip="Perfume">
-              <img src="images/perfume.png" alt="Sunglasses" />
-            </a>
-          </div>
-
-          <div class="item" style="--x: -340px; --y: 180px; --angle: -8deg;">
-            <a href="https://shopgoldenrule.com/products/floral-claw-clips" target="_blank" data-tooltip="Claw Clip">
-              <img src="images/clip.png" alt="Wallet" />
-            </a>
-          </div>
-
-          <div class="item" style="--x: 310px; --y: 150px; --angle: 18deg;">
-            <a href="https://www.urbanoutfitters.com/en-ca/shop/hybrid/urban-renewal-vintage-heather-sunglasses?quantity=1" target="_blank" data-tooltip="Sunglasses">
-              <img src="images/glasses.png" alt="Perfume" />
-            </a>
-          </div>
-
-          <div class="item" style="--x: 50px; --y: 300px; --angle: -5deg;">
-            <a href="https://www.urbanoutfitters.com/shop/hybrid/baggu-baby-baggu-reusable-tote-bag" target="_blank" data-tooltip="Baggu">
-              <img src="images/book.png" alt="Keys" />
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- BAG 2 -->
-      <div class="bag-container" data-index="1">
-        <img src="images/osoi.png" alt="Bag 2" class="bag" />
-        <div class="items" id="items-2">
-          <div class="item" style="--x: -190px; --y: -170px; --angle: -15deg;">
-            <a href="https://www.rhodeskin.com/products/peptide-lip-tint-ribbon" target="_blank" data-tooltip="Lip Tint">
-              <img src="images/rhode.png" alt="Lipstick"/>
+            <a href="https://www.guerlain.com/us/en-us/p/rouge-g-lart-deco-case-P043944.html?v=G043944&gad_source=1&gclid=Cj0KCQjwzYLABhD4ARIsALySuCRVgHtTLtCNHmFHZEBaY5eGU0DB3rpVoYytNDqbq8pxEXHgYOuTV-AaAt2sEALw_wcB&gclsrc=aw.ds" target="_blank" data-tooltip="Lipstick">
+              <img src="images/guerlain.png" alt="Lip Stick"/>
             </a>
           </div>
           <div class="item" style="--x: 150px; --y: -260px; --angle: 12deg;">
-            <a href="https://noshinku.com/collections/vetiver/products/vetiver-refillable-pocket-sanitizer" target="_blank" data-tooltip="Hand Sanitizer">
-              <img src="images/sani.png" alt="Sunglasses" />
-            </a>
-          </div>
-          <div class="item" style="--x: -340px; --y: 180px; --angle: -8deg;">
             <a href="https://www.sephora.com/product/replica-lazy-sunday-morning-travel-spray-P440448?country_switch=us&lang=en&skuId=2102671&om_mmc=ppc-GG_17791296865___2102671__1014485_c&country_switch=us&lang=en&gad_source=1&gclid=Cj0KCQjwzYLABhD4ARIsALySuCTR0wEWVIyxzrt7pJ8mlnZy6hmijZwQylIpkLLZQYJL_6AzOmGJwksaAsQrEALw_wcB&gclsrc=aw.ds" target="_blank" data-tooltip="Perfume">
               <img src="images/replica.png" alt="Perfume" />
             </a>
           </div>
-          <div class="item" style="--x: 310px; --y: 150px; --angle: 18deg;">
-            <a href="https://www.amazon.com/Kit-Kat-NESTL%C3%89-Chocolate-Sweetness/dp/B0BXWM2MXD?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=AUBN54HLJKC0N&gQT=0" target="_blank" data-tooltip="KitKat">
-              <img src="images/kitkat.png" alt="Hand Sanitizer" />
+          <div class="item" style="--x: -340px; --y: 180px; --angle: -8deg;">
+            <a href="https://shopgoldenrule.com/products/floral-claw-clips" target="_blank" data-tooltip="Claw Clip">
+              <img src="images/clip.png" alt="Claw Clip" />
             </a>
           </div>
-          <!-- <div class="item" style="--x: 50px; --y: 300px; --angle: -5deg;">
-            <a href="https://www.urbanoutfitters.com/shop/hybrid/baggu-baby-baggu-reusable-tote-bag" target="_blank" data-tooltip="Baggu">
-              <img src="images/baggu.png" alt="Keys" />
+          <div class="item" style="--x: 310px; --y: 150px; --angle: 18deg;">
+            <a href="https://www.urbanoutfitters.com/en-ca/shop/hybrid/urban-renewal-vintage-heather-sunglasses?quantity=1" target="_blank" data-tooltip="Sunglasses">
+              <img src="images/glasses.png" alt="Sunglasses" />
             </a>
-          </div> -->
+          </div>
           <div class="item" style="--x: 50px; --y: 300px; --angle: -5deg;">
             <a href="https://www.amazon.com/Apple-EarPods-Headphones-Lightning-Connector/dp/B0D7FVQ1ZB" target="_blank" data-tooltip="Earphones">
-              <img src="images/ear.png" alt="Compact Mirror" />
+              <img src="images/ear.png" alt="Earphones" />
+            </a>
+          </div>
+          <div class="item" style="--x: 310px; --y: -100px; --angle: 18deg;">
+            <a href="https://www.amazon.com/Kit-Kat-NESTL%C3%89-Chocolate-Sweetness/dp/B0BXWM2MXD?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=AUBN54HLJKC0N&gQT=0" target="_blank" data-tooltip="KitKat">
+              <img src="images/kitkat.png" alt="Snack" />
+            </a>
+          </div>
+          <div class="item" style="--x: -350px; --y: -100px; --angle: -18deg;">
+            <a href="https://noshinku.com/collections/vetiver/products/vetiver-refillable-pocket-sanitizer" target="_blank" data-tooltip="Hand Sanitizer">
+              <img src="images/sani.png" alt="Sanitizer" />
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- BAG 2 -->
+      <div class="bag-container" data-index="1">
+        <img src="images/baggu.png" alt="Bag 2" class="bag" />
+        <div class="items" id="items-2">
+          <div class="item" style="--x: -190px; --y: -170px; --angle: -15deg;">
+            <a href="https://www.sephora.com/product/P479972" target="_blank" data-tooltip="Skin Tint">
+              <img src="images/tint.png" alt="Skin Tint"/>
+            </a>
+          </div>
+          <div class="item" style="--x: 150px; --y: -260px; --angle: 12deg;">
+            <a href="https://www.sephora.com/product/P377873" target="_blank" data-tooltip="Concealer">
+              <img src="images/nars.png" alt="Nars" />
+            </a>
+          </div>
+          <div class="item" style="--x: -340px; --y: 180px; --angle: -8deg;">
+            <a href="https://www.sephora.com/product/dior-addict-lip-glow-balm-P514572?country_switch=us&lang=en&skuId=2830479&om_mmc=ppc-GG_17862731479_145018770208_pla-420315098113_2830479_612880517884_9016849_c&gad_source=1&gbraid=0AAAAADnIXb2k1dx-EhfhhR75zqBsppFw4&gclid=Cj0KCQjw5azABhD1ARIsAA0WFUF1rFTJMFgGyQls-vpOhThYsY4HLdNsetg70hrjn5xvco7kSpZhAHcaAgtBEALw_wcB&gclsrc=aw.ds" target="_blank" data-tooltip="Lip Balm">
+              <img src="images/lipstick.png" alt="Lip Balm" />
+            </a>
+          </div>
+          <div class="item" style="--x: 310px; --y: 150px; --angle: 18deg;">
+            <a href="https://www.sephora.com/product/glossier-ultralip-high-shine-lipstick-with-hyaluronic-acid-P504823?country_switch=us&lang=en&skuId=2649721&om_mmc=ppc-GG_17862731482_145018771648_pla-350374612984_2649721_612880517938_9016849_c&gad_source=1&gbraid=0AAAAADnIXb2RkW-hAhqP70e0B0le1lqL9&gclid=Cj0KCQjw5azABhD1ARIsAA0WFUH4vJRuirjELXbOxt05td7L3OsnNXmtp7CpVhgSfIxz8MROu4NKLikaAmg0EALw_wcB&gclsrc=aw.ds" target="_blank" data-tooltip="Lipstick">
+              <img src="images/gloss.png" alt="lipstick" />
+            </a>
+          </div>
+          <div class="item" style="--x: 50px; --y: 300px; --angle: -5deg;">
+            <a href="https://www.amazon.com/Apple-EarPods-Headphones-Lightning-Connector/dp/B0D7FVQ1ZB" target="_blank" data-tooltip="Lip Tint">
+              <img src="images/rhode.png" alt="Lip Tint" />
             </a>
           </div>
         </div>
@@ -88,18 +94,27 @@
 
       <!-- BAG 3 -->
       <div class="bag-container" data-index="2">
-        <img src="images/coach.png" alt="Bag 3" class="bag" />
+        <img src="images/jewel.png" alt="Bag 3" class="bag" />
         <div class="items" id="items-3">
-          <!-- Add items for Bag 3 here -->
           <div class="item" style="--x: -190px; --y: -170px; --angle: -15deg;">
-            <a href="https://www.guerlain.com/us/en-us/p/rouge-g-lart-deco-case-P043944.html?v=G043944&gad_source=1&gclid=Cj0KCQjwzYLABhD4ARIsALySuCRVgHtTLtCNHmFHZEBaY5eGU0DB3rpVoYytNDqbq8pxEXHgYOuTV-AaAt2sEALw_wcB&gclsrc=aw.ds" target="_blank" data-tooltip="Lip Stick">
-              <img src="images/guerlain.png" alt="Lipstick"/>
+            <a href="https://www.amazon.com/dp/B0CXKHVB4M?ref=cm_sw_r_cso_cp_apin_dp_4TD1SFYG2AFDKSW0WYXN&ref_=cm_sw_r_cso_cp_apin_dp_4TD1SFYG2AFDKSW0WYXN&social_share=cm_sw_r_cso_cp_apin_dp_4TD1SFYG2AFDKSW0WYXN&previewDoh=1&th=1" target="_blank" data-tooltip="Rings">
+              <img src="images/ring.png" alt="Rings"/>
             </a>
             </div>
         </div>
         <div class="item" style="--x: 310px; --y: 150px; --angle: 10deg;">
-          <a href="https://www.amazon.sg/Tsubota-Pearl-Atomizer-Roller-6-55107-41/dp/B003V8S3KM" target="_blank" data-tooltip="Perfume Roller">
-            <img src="images/roll.png" alt="Hand Sanitizer"/>
+          <a href="https://www.amazon.com/dp/B0CHNVBDDY?ref=cm_sw_r_cso_cp_apin_dp_QDCM69ZCKW1XBBPHM1T0&ref_=cm_sw_r_cso_cp_apin_dp_QDCM69ZCKW1XBBPHM1T0&social_share=cm_sw_r_cso_cp_apin_dp_QDCM69ZCKW1XBBPHM1T0&previewDoh=1&th=1" target="_blank" data-tooltip="Cuff Bracelet">
+            <img src="images/cuff.png" alt="Cuffs"/>
+          </a>
+        </div>
+        <div class="item" style="--x: -340px; --y: 180px; --angle: -8deg;">
+          <a href="https://www.breda.com/products/breda-jane-1741b-silver-metal-bracelet-watch" target="_blank" data-tooltip="Watch">
+            <img src="images/watch.png" alt="Watch" />
+          </a>
+        </div>
+        <div class="item" style="--x: 150px; --y: -260px; --angle: 12deg;">
+          <a href="https://www.analuisa.com/products/pearl-huggie-hoops-frida/" target="_blank" data-tooltip="Earrings">
+            <img src="images/hoop.png" alt="Earrings" />
           </a>
         </div>
       </div>
@@ -107,7 +122,103 @@
 
     <button class="arrow right">›</button>
   </main>
-
+  
+  <!-- Buttons for Filter tab -->
+  <section class="explore-section" id="explore">
+    <div class="explore-toggle">
+      <button class="toggle-btn active" data-view="bags">All Bags</button>
+      <button class="toggle-btn" data-view="products">All Products</button>
+    </div>
+  
+    <div class="explore-content view-bags">
+        <!-- View by Bags -->
+        <div class="product-grid">
+          <a href="https://www.endclothing.com/us/margesherwood-soft-baguette-bag-ee047652-bwp.html?gad_source=1&gclid=Cj0KCQjw5azABhD1ARIsAA0WFUGovbUN9VC7ogWVVGrZNXvL3Ty3zVNBCP5-zlnQXSYsK65C7CIjO9UaAkXBEALw_wcB" target="_blank" class="product-card">
+            <img src="images/bag.png" alt="Shoulder Bag">
+            <p>Marge Sherwood Shoulder bag</p>
+          </a>
+          <a href="https://www.urbanoutfitters.com/shop/hybrid/baggu-small-cosmetic-case2?category=baggu&color=030&type=REGULAR&size=ONE+SIZE&quantity=1" target="_blank" class="product-card">
+            <img src="images/baggu.png" alt="Baggu">
+            <p>Baggu Cosmetics bag</p>
+          </a>
+          <a href="https://www.urbanoutfitters.com/shop/hybrid/sardine-can-velvet-jewelry-case?category=SEARCHRESULTS&color=040&searchparams=q=jewelry%2520case%26sayt=true&type=REGULAR&size=ONE+SIZE&quantity=1" target="_blank" class="product-card">
+            <img src="images/jewel.png" alt="Baggu">
+            <p>Sardine Jewelry Case</p>
+          </a>
+        </div>
+    </div>
+  
+    <div class="explore-content view-products" style="display: none;">
+      <!-- View by Product -->
+      <div class="product-grid">
+        <a href="https://www.guerlain.com/us/en-us/p/rouge-g-lart-deco-case-P043944.html?v=G043944&gad_source=1&gclid=Cj0KCQjwzYLABhD4ARIsALySuCRVgHtTLtCNHmFHZEBaY5eGU0DB3rpVoYytNDqbq8pxEXHgYOuTV-AaAt2sEALw_wcB&gclsrc=aw.ds" target="_blank" class="product-card">
+          <img src="images/guerlain.png" alt="Lip Tint">
+          <p>Lipstick</p>
+        </a>
+        <a href="https://www.sephora.com/product/replica-lazy-sunday-morning-travel-spray-P440448?country_switch=us&lang=en&skuId=2102671&om_mmc=ppc-GG_17791296865___2102671__1014485_c&country_switch=us&lang=en&gad_source=1&gclid=Cj0KCQjwzYLABhD4ARIsALySuCTR0wEWVIyxzrt7pJ8mlnZy6hmijZwQylIpkLLZQYJL_6AzOmGJwksaAsQrEALw_wcB&gclsrc=aw.ds" target="_blank" class="product-card">
+          <img src="images/replica.png" alt="Perfume">
+          <p>Perfume</p>
+        </a>
+        <a href="https://shopgoldenrule.com/products/floral-claw-clips" target="_blank" class="product-card">
+          <img src="images/clip.png" alt="Clip">
+          <p>Claw Clip</p>
+        </a>
+        <a href="https://www.urbanoutfitters.com/en-ca/shop/hybrid/urban-renewal-vintage-heather-sunglasses?quantity=1" target="_blank" class="product-card">
+          <img src="images/glasses.png" alt="Sunglasses">
+          <p>Sunglasses</p>
+        </a>
+        <a href="https://noshinku.com/collections/vetiver/products/vetiver-refillable-pocket-sanitizer" target="_blank" class="product-card">
+          <img src="images/sani.png" alt="Sanitizer">
+          <p>Sanitizer</p>
+        </a>
+        <a href="https://www.amazon.com/Kit-Kat-NESTL%C3%89-Chocolate-Sweetness/dp/B0BXWM2MXD?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=AUBN54HLJKC0N&gQT=0" target="_blank" class="product-card">
+          <img src="images/kitkat.png" alt="Snack">
+          <p>KitKat</p>
+        </a>
+        <a href="https://www.amazon.com/Apple-EarPods-Headphones-Lightning-Connector/dp/B0D7FVQ1ZB" target="_blank" class="product-card">
+          <img src="images/ear.png" alt="Earphones">
+          <p>Earphones</p>
+        </a>
+        <a href="https://www.sephora.com/product/P479972" target="_blank" class="product-card">
+          <img src="images/tint.png" alt="Skin Tint">
+          <p>Tinted Moisturizer</p>
+        </a>
+        <a href="https://www.sephora.com/product/P377873" target="_blank" class="product-card">
+          <img src="images/nars.png" alt="Nars">
+          <p>Nars Concealer</p>
+        </a>
+        <a href="https://www.rhodeskin.com/products/peptide-lip-tint-ribbon" target="_blank" class="product-card">
+          <img src="images/rhode.png" alt="Nars">
+          <p>Lip Tint</p>
+        </a>
+        <a href="https://www.sephora.com/product/glossier-ultralip-high-shine-lipstick-with-hyaluronic-acid-P504823?country_switch=us&lang=en&skuId=2649721&om_mmc=ppc-GG_17862731482_145018771648_pla-350374612984_2649721_612880517938_9016849_c&gad_source=1&gbraid=0AAAAADnIXb2RkW-hAhqP70e0B0le1lqL9&gclid=Cj0KCQjw5azABhD1ARIsAA0WFUH4vJRuirjELXbOxt05td7L3OsnNXmtp7CpVhgSfIxz8MROu4NKLikaAmg0EALw_wcB&gclsrc=aw.ds" target="_blank" class="product-card">
+          <img src="images/gloss.png" alt="Nars">
+          <p>Lipstick</p>
+        </a>
+        <a href="https://www.sephora.com/product/dior-addict-lip-glow-balm-P514572?country_switch=us&lang=en&skuId=2830479&om_mmc=ppc-GG_17862731479_145018770208_pla-420315098113_2830479_612880517884_9016849_c&gad_source=1&gbraid=0AAAAADnIXb2k1dx-EhfhhR75zqBsppFw4&gclid=Cj0KCQjw5azABhD1ARIsAA0WFUF1rFTJMFgGyQls-vpOhThYsY4HLdNsetg70hrjn5xvco7kSpZhAHcaAgtBEALw_wcB&gclsrc=aw.ds" target="_blank" class="product-card">
+          <img src="images/lipstick.png" alt="Nars">
+          <p>Lip Balm</p>
+        </a>
+        <a href="https://www.amazon.com/dp/B0CXKHVB4M?ref=cm_sw_r_cso_cp_apin_dp_4TD1SFYG2AFDKSW0WYXN&ref_=cm_sw_r_cso_cp_apin_dp_4TD1SFYG2AFDKSW0WYXN&social_share=cm_sw_r_cso_cp_apin_dp_4TD1SFYG2AFDKSW0WYXN&previewDoh=1&th=1" target="_blank" class="product-card">
+          <img src="images/ring.png" alt="Nars">
+          <p>Rings</p>
+        </a>
+        <a href="https://www.amazon.com/dp/B0CHNVBDDY?ref=cm_sw_r_cso_cp_apin_dp_QDCM69ZCKW1XBBPHM1T0&ref_=cm_sw_r_cso_cp_apin_dp_QDCM69ZCKW1XBBPHM1T0&social_share=cm_sw_r_cso_cp_apin_dp_QDCM69ZCKW1XBBPHM1T0&previewDoh=1&th=1" target="_blank" class="product-card">
+          <img src="images/cuff.png" alt="Nars">
+          <p>Cuff Bracelet</p>
+        </a>
+        <a href="https://www.breda.com/products/breda-jane-1741b-silver-metal-bracelet-watch" target="_blank" class="product-card">
+          <img src="images/watch.png" alt="Nars">
+          <p>Watch</p>
+        </a>
+        <a href="https://www.analuisa.com/products/pearl-huggie-hoops-frida/" target="_blank" class="product-card">
+          <img src="images/hoop.png" alt="Nars">
+          <p>Earrings</p>
+        </a>
+      </div>
+    </div>
+  </section>
+  
   <script src="script.js"></script>
 </body>
 </html>

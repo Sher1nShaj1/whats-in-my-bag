@@ -1,3 +1,4 @@
+/* Ensures padding/border don't increase element width */
 * {
   box-sizing: border-box;
 }
@@ -7,10 +8,13 @@ body, html {
   padding: 0;
   height: 100%;
   width: 100%;
-  overflow: hidden;
+  overflow: hidden; /* Prevent horizontal scrolling */
+  overflow-y: auto; /* Allow vertical scrolling */
   font-family: Arial, sans-serif;
+  scroll-behavior: smooth; /* Smooth scrolling when using scrollIntoView */
 }
 
+/* === BACKGROUND STYLES === */
 .background {
   position: fixed;
   top: 0;
@@ -24,6 +28,7 @@ body, html {
   z-index: -1;
 }
 
+/* === MAIN BAG VIEWPORT === */
 main {
   display: flex;
   justify-content: center;
@@ -35,7 +40,7 @@ main {
   padding: 20px;
 }
 
-/* Container that holds all bags */
+/* === BAG CAROUSEL WRAPPER === */
 .carousel-wrapper {
   position: relative;
   width: 100%;
@@ -45,6 +50,7 @@ main {
   align-items: center;
 }
 
+/* Each bag and its contents */
 .bag-container {
   position: absolute;
   width: 300px;
@@ -55,17 +61,18 @@ main {
 }
 
 .bag-container.active {
-  display: flex;
+  display: flex;/* Only the active bag is visible */
 }
 
+/* Bag image styling */
 #bag,
 .bag {
   width: 100%;
-  cursor: pointer;
+  cursor: pointer; /* Indicates it's clickable */
   z-index: 1;
   position: relative;
 }
-
+/* Container for bag's product items */
 .items {
   position: absolute;
   top: 0;
@@ -73,8 +80,10 @@ main {
   width: 100%;
   height: 100%;
   cursor: pointer;
-  pointer-events: none;
+  pointer-events: none; /* Prevent item container from blocking clicks */
 }
+
+/* === BAG ITEM (PRODUCT) STYLES === */
 
 .item {
   position: absolute;
@@ -82,9 +91,10 @@ main {
   left: 50%;
   transform: translate(-50%, -50%) rotate(0deg);
   transition: transform 0.8s ease-out, opacity 0.5s ease;
-  opacity: 0;
+  opacity: 0;/* Hidden initially */
 }
 
+/* Add delays so items animate in a staggered way */
 .item:nth-child(1) { transition-delay: 0s; }
 .item:nth-child(2) { transition-delay: 0.05s; }
 .item:nth-child(3) { transition-delay: 0.1s; }
@@ -92,21 +102,22 @@ main {
 .item:nth-child(5) { transition-delay: 0.2s; }
 .item:nth-child(6) { transition-delay: 0.25s; }
 
+/* Item images (e.g. lipstick, sunglasses) */
 .item img {
   width: 500px;
   height: 500px;
-  pointer-events: auto;
+  pointer-events: auto; /* Enables clicking individual product links */
 }
-
+/* === TOOLTIP STYLING === */
 .item a {
   position: relative;
   display: inline-block;
 }
 
 .item a::after {
-  content: attr(data-tooltip);
+  content: attr(data-tooltip);/* Use custom tooltip text */
   position: absolute;
-  bottom: 100%;
+  bottom: 100%; /* Display above the item */
   left: 50%;
   transform: translateX(-50%);
   background: rgba(0, 0, 0, 0.75);
@@ -122,7 +133,7 @@ main {
 }
 
 .item a:hover::after {
-  opacity: 1;
+  opacity: 1; /* Show tooltip on hover */
 }
 
 /* Arrow Navigation Buttons */
@@ -146,7 +157,105 @@ main {
 .arrow.right {
   right: 10px;
 }
+/* === INTRO SCREEN (LANDING PAGE) === */
+.intro-screen {
+  height: 100vh;
+  width: 100%;
+  background: url('/images/giphy.gif') center center / cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 999;
+}
 
+/* .intro-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  border-radius: 20px;
+} */
+
+.intro-title {
+  font-size: 3rem;
+  color: white;
+  font-family: 'Georgia', serif;
+  text-align: center;
+  margin: 0;
+}
+
+/* body {
+  scroll-behavior: smooth;
+} */
+
+/* === EXPLORE SECTION: VIEW BY BAG / PRODUCT === */
+
+.explore-section {
+  padding: 60px 30px;
+  background-color: #fff;
+  min-height: 100vh;
+  transition: all 0.6s ease;
+}
+
+.explore-toggle {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.toggle-btn {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 1rem;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.toggle-btn.active {
+  background: #333;
+  color: #fff;
+}
+/* Shared grid layout for bags and products */
+.bag-grid, .product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+/* Reusable card layout */
+.bag-card, .product-card {
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 200px;
+}
+
+.bag-card img, .product-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+/* Small thumbnails of products in a bag */
+.bag-products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+/* Product hover animation */
+.product-card {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+/* === RESPONSIVE ADJUSTMENTS === */
 @media screen and (min-width: 768px) {
   .item img {
     width: 300px;
